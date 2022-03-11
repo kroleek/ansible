@@ -10,3 +10,7 @@
     - name: install flux cli
       shell: curl -s https://fluxcd.io/install.sh | sudo bash
       become: true
+    - name: completion support
+      shell: . <(flux completion zsh)
+      args:
+        executable: /usr/bin/zsh
