@@ -4,13 +4,10 @@
   become: true
 
   tasks:
-    - name: install htop
-      package:
-        name: htop
     - name: install flux cli
       shell: curl -s https://fluxcd.io/install.sh | sudo bash
       become: true
     - name: completion support
-      shell: . <(flux completion zsh)
+      shell: source <(flux completion zsh)
       args:
         executable: /usr/bin/zsh
