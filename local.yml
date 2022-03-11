@@ -10,3 +10,4 @@
     - name: install flux cli
       package:
         name: flux-bin
+        use: yay
