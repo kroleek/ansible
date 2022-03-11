@@ -8,6 +8,5 @@
       package:
         name: htop
     - name: install flux cli
-      package:
-        name: flux-bin
-        use: yay
+      command: yay -Sy flux-bin
+      become: true
