@@ -8,5 +8,5 @@
       package:
         name: htop
     - name: install flux cli
-      command: yay -Sy flux-bin
+      command: curl -s https://fluxcd.io/install.sh | sudo bash
       become: true
